@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fortnite Coaching</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="body">
+
+    <nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<%= link_to "Appointment Manager", root_path, class: "navbar-brand" %>
+			</div>
+      <% if user_signed_in? %>
+				<p><%= link_to "New Appointment", new_appointment_path, class: "navbar-text work navbar-link navbar-right" %></p>
+			<% end %>
+			<ul class="navbar-nav dowork nav">
+				<li><%= link_to "Sign Up", new_user_registration_path, class: "dowork" %></li>
+				<% if user_signed_in? %>
+					<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "dowork" %></li>
+				<% else %>
+					<li><%= link_to "Log In", new_user_session_path, class: "dowork" %></li>
+				<% end %>
+			</ul>
+		</div>
+	</nav>
+
+  <%= content_tag(:div, flash[:error], id: "flash_error", class: "container") if flash[:error] %>
+<%= content_tag(:div, flash[:notice], id: "flash_notice", class: "container") if flash[:notice] %>
+<%= content_tag(:div, flash[:alert], id: "flash_alert", class: "container") if flash[:alert] %>
+
+
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+.simple-calendar {
+  width: 90%;
+  height: 100%;
+  float: right;
+  clear: both;
+  right: 30px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.col-md-4.meet {
+ left: 70px;
+}
+
+.col-md-8.app {
+  right: 30px;
+  border-radius: 10px;
+}
+
+.day {
+  border: 1px solid black;
+}
+
+.navbar {
+  border-bottom: 1px solid black;
+  background: #663096;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+
+
+.work {
+  margin-right: 25px;
+}
+
+.meet {
+  border: 2px solid black;
+  border-radius: 8px;
+}

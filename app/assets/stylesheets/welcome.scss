@@ -1,0 +1,66 @@
+.module {
+  width: 100%;
+}
+
+.module-island {
+  width: 70%;
+  height: 200px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background: white;
+}
+
+.module-island p {
+  margin: 10px;
+  color: white;
+  font-size: 24px;
+}
+
+.module-island-nav {
+  top: 0;
+  margin-top: -10px;
+  border-radius: 8px;
+  height: 70px;
+  width: 100%;
+  background: #663096;
+}
+
+.module-p {
+  border-radius: 25px;
+  width: 250px;
+  height: 50px;
+  float: right;
+  margin-right: 30px;
+  margin-top: -60px;
+  background: #0000cc;
+}
+
+.module-p a {
+  color: white;
+  margin-top: -50px;
+  margin-left: 15px;
+}
+
+.module-p a:hover {
+  color: white;
+}
+
+.module-table {
+  height: 100px;
+  width: 100%;
+}
+
+.module-words {
+  color: black;
+
+}
+
+p.words {
+  color: black;
+  margin-top: 45px;
+  width: 50%;
+}
+
+.body {
+  background: #f2f2f2;
+}
